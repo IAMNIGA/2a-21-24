@@ -40,9 +40,59 @@ basic.forever(function () {
     OLED12864_I2C.showString(
     0,
     0,
-    "" + day + "/",
+    "" + day + "/" + month + "/" + YEAR + "",
     1
     )
+    if (weekday == 1) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Mon",
+        1
+        )
+    } else if (weekday == 2) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Tue",
+        1
+        )
+    } else if (weekday == 3) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Wed",
+        1
+        )
+    } else if (weekday == 4) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Thr",
+        1
+        )
+    } else if (weekday == 5) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Fri",
+        1
+        )
+    } else if (weekday == 6) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Sat",
+        1
+        )
+    } else if (weekday == 6) {
+        OLED12864_I2C.showString(
+        0,
+        1,
+        "Sun",
+        1
+        )
+    }
 })
 loops.everyInterval(5000, function () {
     music.stopAllSounds()
