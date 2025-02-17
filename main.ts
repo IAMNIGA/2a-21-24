@@ -85,7 +85,7 @@ basic.forever(function () {
         "Sat",
         1
         )
-    } else if (weekday == 6) {
+    } else if (weekday == 7) {
         OLED12864_I2C.showString(
         0,
         1,
